@@ -15,7 +15,8 @@ class CateogryController extends Controller
     public function index()
     {
         //
-        return view('category.index');
+        $category = Cateogry::all();
+        return view('category.index', compact('category'));
     }
 
     /**

@@ -12,12 +12,17 @@
                                 <tr>
                                     <th>#</th>
                                     <th>Nama Category</th>
+                                    <th>Deskripsi</th>
                                     <th>Tools</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    {{-- sintax tarus disini --}}
+                                    @foreach ($category as $ct)
+                                        <td>{{ $loop->iteration }}</td>
+                                        <td>{{ $ct->namacategory }}</td>
+                                        <td>{{ $ct->description }}</td>
+                                    @endforeach
                                 </tr>
                             </tbody>
                         </table>

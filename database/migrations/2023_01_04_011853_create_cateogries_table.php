@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('cateogries', function (Blueprint $table) {
             $table->id();
+            $table->string('namacategory', 100)->nullable();
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }
