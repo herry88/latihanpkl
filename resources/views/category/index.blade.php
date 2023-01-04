@@ -16,7 +16,9 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                
+                                <tr>
+                                    {{-- sintax tarus disini --}}
+                                </tr>
                             </tbody>
                         </table>
                     </div>
